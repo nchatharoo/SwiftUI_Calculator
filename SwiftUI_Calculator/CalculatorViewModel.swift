@@ -31,6 +31,9 @@ class CalculatorViewModel {
         switch operationType {
         case "+":
             operation = calculator.add
+        case "-":
+            operation = calculator.substract
+
         default:
             break
         }

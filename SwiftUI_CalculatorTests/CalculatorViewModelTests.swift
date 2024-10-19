@@ -32,4 +32,13 @@ final class CalculatorViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.displayText, "8")
     }
+    
+    func test_subtractionOperation() {
+        viewModel.inputNumber(10)
+        viewModel.performOperation("-")
+        viewModel.inputNumber(4)
+        viewModel.calculateResult()
+        
+        XCTAssertEqual(viewModel.displayText, "6")
+    }
 }
