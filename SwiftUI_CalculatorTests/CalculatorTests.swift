@@ -28,5 +28,9 @@ final class CalculatorTests: XCTestCase {
     func test_multiply() {
         XCTAssertEqual(calculator.multiply(2, 3), 6)
     }
+    
+    func test_divide() {
+        XCTAssertEqual(calculator.divide(6, 3), 2)
+    }
 
 }
