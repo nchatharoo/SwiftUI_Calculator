@@ -22,7 +22,7 @@ class CalculatorViewModel: ObservableObject {
     
     func inputNumber(_ number: Double) {
         currentNumber = number
-        displayText = "\(number)"
+        displayText = formatResult(number)
     }
     
     func performOperation(_ operationType: String) {
