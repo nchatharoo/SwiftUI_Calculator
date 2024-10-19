@@ -24,5 +24,9 @@ final class CalculatorTests: XCTestCase {
     func test_substract() {
         XCTAssertEqual(calculator.substract(3, 2), 1)
     }
+    
+    func test_multiply() {
+        XCTAssertEqual(calculator.multiply(2, 3), 6)
+    }
 
 }
