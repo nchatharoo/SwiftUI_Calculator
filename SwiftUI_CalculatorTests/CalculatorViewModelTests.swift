@@ -9,5 +9,6 @@ import XCTest
 @testable import SwiftUI_Calculator
 
 final class CalculatorViewModelTests: XCTestCase {
-
+    var viewModel: CalculatorViewModel!
+    var mock: MockCalculator!
 }
