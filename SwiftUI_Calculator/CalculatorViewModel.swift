@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CalculatorViewModel {
+class CalculatorViewModel: ObservableObject {
     @Published var displayText: String = "0"
     @Published var errorMessage: String = ""
     
