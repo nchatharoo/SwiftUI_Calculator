@@ -23,4 +23,13 @@ final class CalculatorViewModelTests: XCTestCase {
         mockCalculator = nil
         super.tearDown()
     }
+    
+    func test_additionOperation() {
+        viewModel.inputNumber(5)
+        viewModel.performOperation("+")
+        viewModel.inputNumber(3)
+        viewModel.calculateResult()
+        
+        XCTAssertEqual(viewModel.displayText, "8")
+    }
 }
