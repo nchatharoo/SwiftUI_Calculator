@@ -10,5 +10,17 @@ import XCTest
 
 final class CalculatorViewModelTests: XCTestCase {
     var viewModel: CalculatorViewModel!
-    var mock: MockCalculator!
+    var mockCalculator: MockCalculator!
+    
+    override func setUp() {
+        super.setUp()
+        mockCalculator = MockCalculator()
+        viewModel = CalculatorViewModel(calculator: mockCalculator)
+    }
+    
+    override func tearDown() {
+        viewModel = nil
+        mockCalculator = nil
+        super.tearDown()
+    }
 }

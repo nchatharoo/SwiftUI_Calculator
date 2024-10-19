@@ -9,4 +9,9 @@ import Foundation
 
 class CalculatorViewModel {
     
+    private var calculator: CalculatorProtocol
+    
+    init(calculator: CalculatorProtocol) {
+        self.calculator = calculator
+    }
 }
