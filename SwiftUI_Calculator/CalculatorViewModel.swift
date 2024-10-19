@@ -72,4 +72,10 @@ class CalculatorViewModel: ObservableObject {
         let result = operation(previousNumber, currentNumber)
         displayText = formatResult(result)
     }
+    
+    func clear() {
+        currentNumber = 0
+        previousNumber = 0
+        displayText = "0"
+    }
 }

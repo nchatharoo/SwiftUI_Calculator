@@ -61,6 +61,8 @@ struct CalculatorView: View {
                 viewModel.performOperation(symbol)
             case "=":
                 viewModel.calculateResult()
+            case "C":
+                viewModel.clear()
             default:
                 break
             }
