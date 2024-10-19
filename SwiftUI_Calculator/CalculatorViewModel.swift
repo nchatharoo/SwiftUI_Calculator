@@ -43,7 +43,7 @@ class CalculatorViewModel {
                     print(CalculatorError.divisionByZero)
                     return 0
                 }
-            }		    
+            }
         default:
             break
         }
