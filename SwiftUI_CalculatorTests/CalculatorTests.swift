@@ -38,7 +38,11 @@ final class CalculatorTests: XCTestCase {
     }
     
     func test_squareRoot() {
-        XCTAssertEqual(calculator.squareRoot(9), 3)
+        XCTAssertEqual(try calculator.squareRoot(9), 3)
+    }
+    
+    func test_squareRootOfNegativeThrowsError() {
+        XCTAssertThrowsError(try calculator.squareRoot(-9))
     }
 
 }

@@ -25,7 +25,8 @@ class Calculator {
         return a / b
     }
     
-    func squareRoot(_ a: Double) -> Double {
+    func squareRoot(_ a: Double) throws -> Double {
+        guard a >= 0 else { throw CalculatorError.invalidInput }
         return sqrt(a)
     }
 }
@@ -33,4 +34,5 @@ class Calculator {
 
 enum CalculatorError: Error {
     case divisionByZero
+    case invalidInput
 }
