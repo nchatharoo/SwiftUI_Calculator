@@ -11,7 +11,18 @@
 		8E28B7662CC3A1D300B94C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28B7652CC3A1D300B94C77 /* ContentView.swift */; };
 		8E28B7682CC3A1D400B94C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E28B7672CC3A1D400B94C77 /* Assets.xcassets */; };
 		8E28B76B2CC3A1D400B94C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E28B76A2CC3A1D400B94C77 /* Preview Assets.xcassets */; };
+		8E28B7782CC3A3E200B94C77 /* SwiftUI_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28B7772CC3A3E200B94C77 /* SwiftUI_CalculatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E28B7792CC3A3E200B94C77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E28B7582CC3A1D300B94C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E28B75F2CC3A1D300B94C77;
+			remoteInfo = SwiftUI_Calculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8E28B7602CC3A1D300B94C77 /* SwiftUI_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +30,19 @@
 		8E28B7652CC3A1D300B94C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E28B7672CC3A1D400B94C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E28B76A2CC3A1D400B94C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E28B7752CC3A3E200B94C77 /* SwiftUI_CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E28B7772CC3A3E200B94C77 /* SwiftUI_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E28B75D2CC3A1D300B94C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E28B7722CC3A3E200B94C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8E28B7622CC3A1D300B94C77 /* SwiftUI_Calculator */,
+				8E28B7762CC3A3E200B94C77 /* SwiftUI_CalculatorTests */,
 				8E28B7612CC3A1D300B94C77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8E28B7602CC3A1D300B94C77 /* SwiftUI_Calculator.app */,
+				8E28B7752CC3A3E200B94C77 /* SwiftUI_CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8E28B7762CC3A3E200B94C77 /* SwiftUI_CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E28B7772CC3A3E200B94C77 /* SwiftUI_CalculatorTests.swift */,
+			);
+			path = SwiftUI_CalculatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +117,24 @@
 			productReference = 8E28B7602CC3A1D300B94C77 /* SwiftUI_Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8E28B7742CC3A3E200B94C77 /* SwiftUI_CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E28B77B2CC3A3E200B94C77 /* Build configuration list for PBXNativeTarget "SwiftUI_CalculatorTests" */;
+			buildPhases = (
+				8E28B7712CC3A3E200B94C77 /* Sources */,
+				8E28B7722CC3A3E200B94C77 /* Frameworks */,
+				8E28B7732CC3A3E200B94C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E28B77A2CC3A3E200B94C77 /* PBXTargetDependency */,
+			);
+			name = SwiftUI_CalculatorTests;
+			productName = SwiftUI_CalculatorTests;
+			productReference = 8E28B7752CC3A3E200B94C77 /* SwiftUI_CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					8E28B75F2CC3A1D300B94C77 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					8E28B7742CC3A3E200B94C77 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8E28B75F2CC3A1D300B94C77;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				8E28B75F2CC3A1D300B94C77 /* SwiftUI_Calculator */,
+				8E28B7742CC3A3E200B94C77 /* SwiftUI_CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +180,13 @@
 			files = (
 				8E28B76B2CC3A1D400B94C77 /* Preview Assets.xcassets in Resources */,
 				8E28B7682CC3A1D400B94C77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E28B7732CC3A3E200B94C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8E28B7712CC3A3E200B94C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E28B7782CC3A3E200B94C77 /* SwiftUI_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E28B77A2CC3A3E200B94C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E28B75F2CC3A1D300B94C77 /* SwiftUI_Calculator */;
+			targetProxy = 8E28B7792CC3A3E200B94C77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8E28B76C2CC3A1D400B94C77 /* Debug */ = {
@@ -322,6 +398,42 @@
 			};
 			name = Release;
 		};
+		8E28B77C2CC3A3E200B94C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9CD4D4F5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nchatharoo.SwiftUI-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI_Calculator";
+			};
+			name = Debug;
+		};
+		8E28B77D2CC3A3E200B94C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9CD4D4F5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nchatharoo.SwiftUI-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI_Calculator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +451,15 @@
 			buildConfigurations = (
 				8E28B76F2CC3A1D400B94C77 /* Debug */,
 				8E28B7702CC3A1D400B94C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E28B77B2CC3A3E200B94C77 /* Build configuration list for PBXNativeTarget "SwiftUI_CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E28B77C2CC3A3E200B94C77 /* Debug */,
+				8E28B77D2CC3A3E200B94C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
