@@ -17,8 +17,12 @@ final class CalculatorTests: XCTestCase {
         calculator = Calculator()
     }
     
-    func testAddition() {
+    func test_addition() {
         XCTAssertEqual(calculator.add(2, 3), 5)
+    }
+    
+    func test_substract() {
+        XCTAssertEqual(calculator.substract(3, 2), 1)
     }
 
 }

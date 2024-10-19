@@ -11,4 +11,8 @@ class Calculator {
     func add(_ a: Double, _ b: Double) -> Double {
         return a + b
     }
+    
+    func substract(_ a: Double, _ b: Double) -> Double {
+        return a - b
+    }
 }
