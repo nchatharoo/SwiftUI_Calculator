@@ -33,6 +33,8 @@ class CalculatorViewModel {
             operation = calculator.add
         case "-":
             operation = calculator.substract
+        case "*":
+            operation = calculator.multiply
 
         default:
             break

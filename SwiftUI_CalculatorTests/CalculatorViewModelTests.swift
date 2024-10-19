@@ -41,4 +41,13 @@ final class CalculatorViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.displayText, "6")
     }
+    
+    func test_multiplyOperation() {
+        viewModel.inputNumber(2)
+        viewModel.performOperation("*")
+        viewModel.inputNumber(3)
+        viewModel.calculateResult()
+        
+        XCTAssertEqual(viewModel.displayText, "6")
+    }
 }
