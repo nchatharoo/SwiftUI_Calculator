@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CalculatorProtocol {
+public protocol CalculatorProtocol {
     func add(_ a: Double, _ b: Double) -> Double
     func substract(_ a: Double, _ b: Double) -> Double
     func multiply(_ a: Double, _ b: Double) -> Double
@@ -45,7 +45,7 @@ class Calculator: CalculatorProtocol {
 }
 
 
-enum CalculatorError: Error {
+public enum CalculatorError: Error {
     case divisionByZero
     case invalidInput
 }
