@@ -84,4 +84,9 @@ final class CalculatorViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.displayText, "8")
     }
+    
+    func test_clear() {
+        viewModel.clear()
+        XCTAssertEqual(viewModel.displayText, "0")
+    }
 }
