@@ -7,7 +7,16 @@
 
 import Foundation
 
-class Calculator {
+protocol CalculatorProtocol {
+    func add(_ a: Double, _ b: Double) -> Double
+    func substract(_ a: Double, _ b: Double) -> Double
+    func multiply(_ a: Double, _ b: Double) -> Double
+    func divide(_ a: Double, _ b: Double) throws -> Double
+    func squareRoot(_ a: Double) throws -> Double
+    func power(_ a: Double, _ b: Double) -> Double
+}
+
+class Calculator: CalculatorProtocol {
     func add(_ a: Double, _ b: Double) -> Double {
         return a + b
     }
