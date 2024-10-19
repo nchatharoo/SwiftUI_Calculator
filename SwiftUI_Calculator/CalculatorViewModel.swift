@@ -77,5 +77,6 @@ class CalculatorViewModel: ObservableObject {
         currentNumber = 0
         previousNumber = 0
         displayText = "0"
+        errorMessage = ""
     }
 }
