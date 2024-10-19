@@ -20,7 +20,13 @@ class Calculator {
         return a * b
     }
     
-    func divide(_ a: Double, _ b: Double) -> Double {
+    func divide(_ a: Double, _ b: Double) throws -> Double {
+        guard b != 0 else { throw CalculatorError.divisionByZero }
         return a / b
     }
+}
+
+
+enum CalculatorError: Error {
+    case divisionByZero
 }

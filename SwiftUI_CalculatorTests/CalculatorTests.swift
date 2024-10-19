@@ -25,12 +25,16 @@ final class CalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.substract(3, 2), 1)
     }
     
-    func test_multiply() {
+    func test_multiply() {	
         XCTAssertEqual(calculator.multiply(2, 3), 6)
     }
     
     func test_divide() {
-        XCTAssertEqual(calculator.divide(6, 3), 2)
+        XCTAssertEqual(try calculator.divide(6, 3), 2)
+    }
+    
+    func test_divisionByZeroThrowsError() {
+        XCTAssertThrowsError(try calculator.divide(6, 0))
     }
 
 }
