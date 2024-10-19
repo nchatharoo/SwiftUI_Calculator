@@ -68,4 +68,11 @@ final class CalculatorViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.displayText, "0")
     }
+    
+    func testSquareRootOfNegativeNumber() {
+        viewModel.inputNumber(-9)
+        viewModel.performOperation("√")
+        
+        XCTAssertEqual(viewModel.errorMessage, "Error: invalid input")
+    }
 }

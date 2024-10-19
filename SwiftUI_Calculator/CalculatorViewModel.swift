@@ -9,6 +9,7 @@ import Foundation
 
 class CalculatorViewModel {
     @Published var displayText: String = "0"
+    @Published var errorMessage: String = ""
     
     private var calculator: CalculatorProtocol
     private var currentNumber: Double = 0
@@ -40,9 +41,16 @@ class CalculatorViewModel {
                 do {
                     return try self.calculator.divide(a, b)
                 } catch {
-                    print(CalculatorError.divisionByZero)
+                    self.errorMessage = "Division by zero is forbidden !"
                     return 0
                 }
+            }
+        case "√":
+            do {
+                currentNumber = try calculator.squareRoot(currentNumber)
+                displayText = "\(currentNumber)"
+            } catch {
+                errorMessage = "Error: invalid input"
             }
         default:
             break
