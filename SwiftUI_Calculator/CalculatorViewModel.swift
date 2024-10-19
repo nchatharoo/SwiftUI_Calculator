@@ -43,7 +43,7 @@ class CalculatorViewModel {
                 } catch {
                     self.errorMessage = "Division by zero is forbidden !"
                     return 0
-                }
+                }			
             }
         case "√":
             do {
@@ -52,6 +52,8 @@ class CalculatorViewModel {
             } catch {
                 errorMessage = "Error: invalid input"
             }
+        case "^":
+                operation = calculator.power
         default:
             break
         }

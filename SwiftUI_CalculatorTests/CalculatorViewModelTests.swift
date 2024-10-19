@@ -60,7 +60,7 @@ final class CalculatorViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.displayText, "2")
     }
     
-    func testDivisionByZeroThrowsError() {
+    func test_divisionByZeroThrowsError() {
         viewModel.inputNumber(10)
         viewModel.performOperation("/")
         viewModel.inputNumber(0)
@@ -69,10 +69,19 @@ final class CalculatorViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.displayText, "0")
     }
     
-    func testSquareRootOfNegativeNumber() {
+    func test_squareRootOfNegativeNumber() {
         viewModel.inputNumber(-9)
         viewModel.performOperation("√")
         
         XCTAssertEqual(viewModel.errorMessage, "Error: invalid input")
+    }
+    
+    func test_powerOperation() {
+        viewModel.inputNumber(2)
+        viewModel.performOperation("^")
+        viewModel.inputNumber(3)
+        viewModel.calculateResult()
+        
+        XCTAssertEqual(viewModel.displayText, "8")
     }
 }
