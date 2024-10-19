@@ -16,5 +16,9 @@ final class CalculatorTests: XCTestCase {
         super.setUp()
         calculator = Calculator()
     }
+    
+    func testAddition() {
+        XCTAssertEqual(calculator.add(2, 3), 5)
+    }
 
 }
