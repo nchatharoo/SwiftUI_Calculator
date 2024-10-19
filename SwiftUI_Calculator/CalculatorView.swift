@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CalculatorView.swift
 //  SwiftUI_Calculator
 //
 //  Created by Nadheer on 19/10/2024.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CalculatorView: View {
+    @StateObject private var viewModel = CalculatorViewModel(calculator: Calculator())
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +22,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CalculatorView()
 }
