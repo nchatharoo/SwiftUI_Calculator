@@ -35,7 +35,15 @@ class CalculatorViewModel {
             operation = calculator.substract
         case "*":
             operation = calculator.multiply
-
+        case "/":
+            operation = { a, b in
+                do {
+                    return try self.calculator.divide(a, b)
+                } catch {
+                    print(CalculatorError.divisionByZero)
+                    return 0
+                }
+            }		    
         default:
             break
         }

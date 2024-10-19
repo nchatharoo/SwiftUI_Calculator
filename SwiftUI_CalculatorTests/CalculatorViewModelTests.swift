@@ -50,4 +50,13 @@ final class CalculatorViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.displayText, "6")
     }
+    
+    func test_divideOperation() {
+        viewModel.inputNumber(6)
+        viewModel.performOperation("/")
+        viewModel.inputNumber(3)
+        viewModel.calculateResult()
+        
+        XCTAssertEqual(viewModel.displayText, "2")
+    }
 }
