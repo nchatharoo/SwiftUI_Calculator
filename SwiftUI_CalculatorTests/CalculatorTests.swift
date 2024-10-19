@@ -36,5 +36,9 @@ final class CalculatorTests: XCTestCase {
     func test_divisionByZeroThrowsError() {
         XCTAssertThrowsError(try calculator.divide(6, 0))
     }
+    
+    func test_squareRoot() {
+        XCTAssertEqual(calculator.squareRoot(9), 3)
+    }
 
 }

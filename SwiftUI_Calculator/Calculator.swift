@@ -24,6 +24,10 @@ class Calculator {
         guard b != 0 else { throw CalculatorError.divisionByZero }
         return a / b
     }
+    
+    func squareRoot(_ a: Double) -> Double {
+        return sqrt(a)
+    }
 }
 
 
