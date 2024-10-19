@@ -29,6 +29,10 @@ class Calculator {
         guard a >= 0 else { throw CalculatorError.invalidInput }
         return sqrt(a)
     }
+    
+    func power(_ a: Double, _ b: Double) -> Double {
+        return pow(a, b)
+    }
 }
 
 

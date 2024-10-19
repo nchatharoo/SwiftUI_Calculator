@@ -44,5 +44,9 @@ final class CalculatorTests: XCTestCase {
     func test_squareRootOfNegativeThrowsError() {
         XCTAssertThrowsError(try calculator.squareRoot(-9))
     }
+    
+    func test_power() {
+        XCTAssertEqual(calculator.power(2, 3), 8)
+    }
 
 }
